@@ -1,3 +1,3 @@
 # vue-plugin-template
 
-eCollect templat for rollup vue components
+eCollect template for rollup vue components
