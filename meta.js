@@ -73,7 +73,7 @@ module.exports = {
       return author.slice(startPosition + 1, endPosition)
     }
   },
-  skipInterpolation: 'src/**/*.vue',
+  skipInterpolation: 'src/**/*.vue!src/Component.vue',
   "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev",
   filters: {
     'build/build.js': `bundler === 'rollup'`,
