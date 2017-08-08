@@ -1,6 +1,6 @@
 <template>
   <div class="counter">
-    <p class="counter-value">{{ value }}</p>
+    <p class="counter-value">\{{ value }}</p>
     <div class="counter-controls">
       <button type="button" @click="increment">+</button>
       <button type="button" @click="decrement">-</button>
