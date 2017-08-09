@@ -1,7 +1,7 @@
 import { play } from 'vue-play';
-import Counter from '../src/Component.vue';
+import Component from '../src/Component.vue';
 
-play(Counter)
+play(Component)
   .add('Normal', {
 	template: `
       <{{ name }} :value="count" @increment="count += 1" @decrement="count -= 1"></{{ name }}>
