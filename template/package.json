@@ -14,7 +14,7 @@
     "build": "run-p build:cjs build:dev build:prod",
     "build:cjs": "rollup -c scripts/rollup.config.js --environment BUILD:cjs",
     "build:dev": "rollup -c scripts/rollup.config.js --environment BUILD:dev",
-    "build:prod": "rollup -c scripts/rollup.config.js --environment BUILD:prod | uglifyjs -mc warnings=false --comments -o dist/template-vue-component.min.js",
+    "build:prod": "rollup -c scripts/rollup.config.js --environment BUILD:prod | uglifyjs -mc warnings=false --comments -o dist/{{ name }}.min.js",
     "build:play": "poi build --config scripts/play.config.js",
     "build:test": "cross-env NODE_ENV=test webpack --config scripts/webpack.config.unit.js",
     "watch:test": "cross-env NODE_ENV=test webpack -w --config scripts/webpack.config.unit.js",
